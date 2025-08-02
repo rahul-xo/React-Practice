@@ -1,12 +1,11 @@
-# React + Vite
+My React Practice Projects 🚀
+A repo for all my React practice code.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. Lifting State Up
+Concept: A common React pattern where the state is "lifted" to the nearest common parent to share it between sibling components.
 
-Currently, two official plugins are available:
+My Code: The state lives in LiftState.jsx and is shared between InputComponent.jsx and DisplayComponent.jsx.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [View Code](src/lifting-state)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+More to Come...
