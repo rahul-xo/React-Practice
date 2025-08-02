@@ -1,8 +1,9 @@
 import React from 'react'
+import LiftState from './lifting-state/LiftState'
 
 const App = () => {
   return (
-    <div>App</div>
+    <LiftState/>
   )
 }
 

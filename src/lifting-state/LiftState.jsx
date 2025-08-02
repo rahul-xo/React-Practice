@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useState } from "react";
+import InputComponent from "./InputComponent";
+import DisplayComponent from "./DisplayComponent";
 
 const LiftState = () => {
+  const [Value,setValue]=useState("");
   return (
-    <div>LiftState</div>
-  )
-}
+    <>
+      <InputComponent Value={Value} setValue={setValue}/>
+      <DisplayComponent Value={Value}/>
+    </>
+  );
+};
 
-export default LiftState
+export default LiftState;
