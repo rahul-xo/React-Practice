@@ -8,4 +8,11 @@ My Code: The state lives in LiftState.jsx and is shared between InputComponent.j
 
 - [View Code](src/lifting-state)
 
-More to Come...
+2. Toggler Button
+Concept: A simple UI component to handle on/off states, built using Tailwind CSS for styling.
+
+My Code: The component is named TogglerButton.jsx and is located inside the Toggler folder.
+
+- [View Code](src/Toggler)
+
+(More concepts to come...)
