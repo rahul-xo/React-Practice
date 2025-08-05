@@ -20,6 +20,11 @@ function TodoUi() {
     }, 1000);
   },[]);
 
+  const handleDelete=(currIndex)=>{
+    const updatedTask=Task.filter((currEle,idx)=> idx!=currIndex)  
+    setTask(updatedTask);
+  }
+
   return (
     // Main container
     <div className="bg-gray-900 min-h-screen flex flex-col items-center pt-20 font-sans px-4">
@@ -77,7 +82,7 @@ function TodoUi() {
                   </svg>
                 </button>
                 {/* Red Delete Button (Style Only) */}
-                <button className="text-red-500 hover:text-red-400" onClick={handleDelete}>
+                <button className="text-red-500 hover:text-red-400" onClick={()=>handleDelete(index)}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-6 w-6"
