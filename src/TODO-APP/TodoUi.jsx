@@ -1,11 +1,9 @@
-import React, { useState } from "react";
-
-// react-icons import hata diya gaya hai taaki error na aaye
+import React, { useEffect, useState } from "react";
 
 function TodoUi() {
   const [Input, setInput] = useState("");
   const [Task, setTask] = useState([]);
-
+  const [DateTime, setDateTime] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!Input.trim()) return;
@@ -14,12 +12,23 @@ function TodoUi() {
     setInput("");
   };
 
+  useEffect(() => {
+    setInterval(() => {
+      const time = new Date().toLocaleTimeString();
+      const date = new Date().toLocaleDateString();
+      setDateTime(`${date}-${time}`);
+    }, 1000);
+  },[]);
+
   return (
     // Main container
     <div className="bg-gray-900 min-h-screen flex flex-col items-center pt-20 font-sans px-4">
+      <h1>{DateTime}</h1>
       {/* Title and Form Container */}
       <div className="w-full max-w-sm">
-        <h1 className="text-5xl font-bold text-white mb-8 text-center">Todo App</h1>
+        <h1 className="text-5xl font-bold text-white mb-8 text-center">
+          Todo App
+        </h1>
         <form onSubmit={handleSubmit}>
           <div className="flex w-full items-center space-x-2">
             {/* Input Field */}
@@ -52,14 +61,36 @@ function TodoUi() {
               <div className="flex items-center space-x-3">
                 {/* Green Check Button (Style Only) */}
                 <button className="text-green-500 hover:text-green-400">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M5 13l4 4L19 7"
+                    />
                   </svg>
                 </button>
                 {/* Red Delete Button (Style Only) */}
-                <button className="text-red-500 hover:text-red-400">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                <button className="text-red-500 hover:text-red-400" onClick={handleDelete}>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+                    />
                   </svg>
                 </button>
               </div>
