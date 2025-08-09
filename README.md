@@ -15,4 +15,9 @@ My Code: The component is named TogglerButton.jsx and is located inside the Togg
 
 - [View Code](src/Toggler)
 
+3. useRef for Uncontrolled Forms
+Concept: This project shows how to use the useRef hook to create an uncontrolled form. The form's data is read directly from the DOM on submit, instead of being managed by React state.
+
+- [View Code](src/components/UseRef.jsx)
+
 (More concepts to come...)
