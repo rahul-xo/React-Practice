@@ -4,6 +4,7 @@ import TogglerButton from './Toggler/TogglerButton'
 import TodoUi from './TODO-APP/TodoUi'
 import RegistrationForm from './components/RegistrationForm'
 import UseRef from './components/UseRef'
+import UseContext from './components/UseContext'
 
 const App = () => {
   return (
@@ -11,7 +12,8 @@ const App = () => {
     // <TogglerButton/>
     // <TodoUi/>
     // <RegistrationForm/>
-    <UseRef/>
+    // <UseRef/>
+    <UseContext/>
   )
 }
 
