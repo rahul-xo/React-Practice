@@ -20,4 +20,9 @@ Concept: This project shows how to use the useRef hook to create an uncontrolled
 
 - [View Code](src/components/UseRef.jsx)
 
+4. useContext for Prop Drilling
+Concept: This project demonstrates the useContext hook, which solves the "prop drilling" problem. It allows you to pass data through the component tree without having to manually pass props down through every level.
+
+-[View Code](src/components/UseContext.jsx)
+
 (More concepts to come...)
