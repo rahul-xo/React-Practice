@@ -25,4 +25,10 @@ Concept: This project demonstrates the useContext hook, which solves the "prop d
 
 -[View Code](src/components/UseContext.jsx)
 
-(More concepts to come...)
+5. - `useReducer` Hook
+
+Today I learned about React's **`useReducer`** hook.  
+It works like `useState` for storing and updating state, but instead of directly setting the value, you send actions to a reducer function.  
+This approach keeps update logic organized and is especially useful when managing complex or multi-step state changes.
+
+-[View Code](src/components/UseReducer.jsx)
