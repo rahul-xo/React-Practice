@@ -5,6 +5,7 @@ import TodoUi from './TODO-APP/TodoUi'
 import RegistrationForm from './components/RegistrationForm'
 import UseRef from './components/UseRef'
 import UseContext from './components/UseContext'
+import UseReducer from './components/UseReducer'
 
 const App = () => {
   return (
@@ -13,7 +14,8 @@ const App = () => {
     // <TodoUi/>
     // <RegistrationForm/>
     // <UseRef/>
-    <UseContext/>
+    // <UseContext/>
+    <UseReducer/>
   )
 }
 
