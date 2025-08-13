@@ -6,6 +6,7 @@ import RegistrationForm from './components/RegistrationForm'
 import UseRef from './components/UseRef'
 import UseContext from './components/UseContext'
 import UseReducer from './components/UseReducer'
+import UseMemo from './UseMemo/usememo'
 
 const App = () => {
   return (
@@ -15,7 +16,8 @@ const App = () => {
     // <RegistrationForm/>
     // <UseRef/>
     // <UseContext/>
-    <UseReducer/>
+    // <UseReducer/>
+    <UseMemo/>
   )
 }
 
