@@ -32,3 +32,10 @@ It works like `useState` for storing and updating state, but instead of directly
 This approach keeps update logic organized and is especially useful when managing complex or multi-step state changes.
 
 -[View Code](src/components/UseReducer.jsx)
+
+6. React.memo & useRef
+Concept: This project shows how React.memo stops a component (SideEffect) from re-rendering when its parent (UseMemo) updates. useRef is used to count the child's renders, proving it only renders once.
+
+-[View Code](src/UseMemo/UseMemo.jsx)
+
+(More concepts to come...)
