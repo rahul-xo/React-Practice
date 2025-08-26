@@ -7,6 +7,7 @@ import UseRef from './components/UseRef'
 import UseContext from './components/UseContext'
 import UseReducer from './components/UseReducer'
 import UseMemo from './UseMemo/usememo'
+import Movie from './components/Movie'
 
 const App = () => {
   return (
@@ -17,7 +18,8 @@ const App = () => {
     // <UseRef/>
     // <UseContext/>
     // <UseReducer/>
-    <UseMemo/>
+    // <UseMemo/>
+    <Movie/>
   )
 }
 
